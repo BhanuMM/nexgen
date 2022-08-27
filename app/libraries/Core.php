@@ -10,7 +10,6 @@
 
             $url = $this -> getUrl();
             
-            exit;
             //ucwords capitalize the first letter
             if(file_exists('../app/controllers/' . ucwords($url[0]) . '.php')){
                 $this -> currentController = ucwords($url[0]);
