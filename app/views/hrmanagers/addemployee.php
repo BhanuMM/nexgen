@@ -3,10 +3,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Edit Profile</title>
+    <title>Add Employee</title>
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/editProfStyles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/navStyles.css" />
+    
   </head>
   <body>
   <nav>
@@ -49,13 +50,13 @@
       
     </header>
     <hr>
-    <div class="order-content">
+    <div class="order-content" style="width:100%">
       
-      <div class="stock-details">
-          <div class="name">
+      <div class="stock-details" style="margin-left:auto; margin-right:auto; margin-bottom:0px">
+          <div style="display:flex; justify-content:center">
             <h2>ADD EMPLOYEE</h2>
           </div>
-          <div class="details">
+          <div class="details" style=" display:flex; justify-content:center">
           <form action="<?php echo URLROOT; ?>/Hrmanagers/addemployee" method="POST" name="createAccount" >
           
           <h2>Account Info</h2>
@@ -116,7 +117,7 @@
             
           </div>
 
-          <div class="proceed-button">
+          <div class="proceed-button" style=" display:flex; justify-content:center">
           <input class="btn-proceed" type="submit" value="ADD EMPLOYEE">
               
           </div>

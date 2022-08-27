@@ -1,10 +1,10 @@
 /*google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
-*{
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
 }
-body{
-    background-color: rgb(250, 250, 250);
+body {
+  background-color: rgb(250, 250, 250);
 }
 
 /* header{
@@ -30,16 +30,16 @@ body{
   margin-top: 50px;
 } */
 
-.order-title{
+.order-title {
   padding-left: 50px;
 }
 
-.order-content{
+.order-content {
   display: flex;
   height: auto;
 }
 
-.order-content .stock-image{
+.order-content .stock-image {
   float: left;
   width: 45%;
   /* background-color: blue; */
@@ -47,46 +47,44 @@ body{
   /* padding-left: 50px; */
   padding-left: 250px;
   padding-top: 100px;
-  
 }
 
-.order-content .stock-details{
+.order-content .stock-details {
   float: left;
   width: 55%;
   /* background-color: blueviolet; */
-  height: 500px;
+  height: 100px;
 }
 
-
-.order-content .stock-details .name{
+.order-content .stock-details .name {
   padding-left: 115px;
 }
 
-.order-content .stock-details .details{
+.order-content .stock-details .details {
   padding-left: 50px;
   padding-top: 25px;
   height: auto;
 }
 
-.stock-details .details .info-row{
+.stock-details .details .info-row {
   display: flex;
   padding-bottom: 10px;
 }
-.stock-details .details .info-row .take-info{
+.stock-details .details .info-row .take-info {
   float: left;
   height: 25px;
   width: 200px;
   /* background-color: bisque; */
 }
 
-.stock-details .details .info-row .info{
+.stock-details .details .info-row .info {
   float: left;
   height: 25px;
   width: 200px;
   /* background-color: brown; */
 }
 
-.stock-details .proceed-button{
+.stock-details .proceed-button {
   padding-left: 80px;
   padding-top: 50px;
 }
@@ -99,8 +97,11 @@ body{
   cursor: pointer;
   margin-left: 10px;
   width: 250px;
-  
 }
 
-.btn-proceed {background-color: #55b406;}  
-.btn-proceed:hover {background: #2e5d08;}
+.btn-proceed {
+  background-color: #55b406;
+}
+.btn-proceed:hover {
+  background: #2e5d08;
+}

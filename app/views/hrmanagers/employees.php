@@ -2,10 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Completed Orders</title>
-    <link rel="stylesheet" href=" <?php echo URLROOT; ?> /css/styleCompleteOrders.css" />
-    <link rel="stylesheet" href="<?php echo URLROOT;?>/css/style.css" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Employees</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="<?php echo URLROOT;?>/css/hr.css" type="text/css">
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/navStyles.css" />
   </head>
   <body>
@@ -43,18 +44,18 @@
     </div>
     </nav>
 
-    <div>
-      <a href="<?php echo URLROOT;?>/Hrmanagers/addemployee">Add a new Employee</a>
+    <div class="addemployee-btn">
+      <a href="<?php echo URLROOT;?>/Hrmanagers/addemployee">+Add a new Employee</a>
     </div>
 
-    <div class="detail">
+   
       <div class="dtopic">
         <h1>Completed Orders</h1>
       </div>
       
       
     </div>
-    <table>
+    <table class="employee-view">
   <tr>
     <th>UserID</th>
     <th>Username</th>
@@ -69,7 +70,7 @@
   </tr>
 
   <?php  foreach($data["employees"] as $employee){ ?>
-  <?php }?>
+  
   <tr>
     <td><?php echo $employee->userID ;?></td>
     <td><?php echo $employee->username ;?></td>
@@ -82,8 +83,9 @@
     <td>Remove</td>
     <td>Delete</td>
   </tr>
+  <?php }?>
 </table>
-      <br><br>
+      
   </body>
 </html>
 

@@ -75,7 +75,7 @@
 
 
     public function getEmployeeDetails(){
-      $this->db->query('SELECT users.username, employees.* FROM users INNER JOIN employees ON users.userID = employees.userID');
+      $this->db->query('SELECT `users`.`username`, employees.* FROM users INNER JOIN employees ON `users`.`userID` = `employees`.`userID`');
 
       $results = $this->db->resultSet();
 
