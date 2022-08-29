@@ -84,24 +84,17 @@ body {
   /* background-color: brown; */
 }
 
-.stock-details .proceed-button {
-  padding-left: 80px;
-  padding-top: 50px;
-}
-
-.stock-details .proceed-button input.btn-proceed {
-  border: none;
-  color: white;
+.btn-proceed {
+  margin-top: 50px;
   padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
-  margin-left: 10px;
-  width: 250px;
+  border-radius: 10px;
 }
 
 .btn-proceed {
-  background-color: #55b406;
+  background-color: black;
+  color: white;
 }
 .btn-proceed:hover {
-  background: #2e5d08;
+  background: white;
+  color: black;
 }

@@ -1,3 +1,6 @@
+ <?php if (!isset($_SESSION['userID'])|| $_SESSION["userRoleID"] != 1){ 
+      header('location: ' . URLROOT .  '/pages/index');
+}?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -22,7 +25,7 @@
         
             <li class="right"><a href="<?php echo URLROOT;?>/Hrmanagers/employees">Employees</a></li>
             
-                <li class="right"><a href="<?php echo URLROOT;?>/buyers/ongoingorders">Sessions</a></li>
+                <li class="right"><a href="<?php echo URLROOT;?>/Hrmanagers/sessions">Sessions</a></li>
             
             
                     

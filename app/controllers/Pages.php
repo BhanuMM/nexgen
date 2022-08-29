@@ -73,7 +73,7 @@ class Pages extends Controller {
       }
 
       if($_SESSION['userRoleID'] == 2){
-        header('location: ' . URLROOT . '/employees/dashbaord');
+        header('location: ' . URLROOT . '/employees/dashboard');
       }
 
     }

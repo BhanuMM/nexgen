@@ -1,4 +1,6 @@
-
+ <?php if (!isset($_SESSION['userID'])|| $_SESSION["userRoleID"] != 1){ 
+      header('location: ' . URLROOT .  '/pages/index');
+}?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -18,11 +20,11 @@
         </div>
         <div class="middle" id ="mid" >
         <ul>
-            <li class="right"><a href="<?php echo URLROOT;?>/pages/index">Dashboard</a></li>
+            <li class="right"><a href="<?php echo URLROOT;?>/Hrmanagers/dashboard">Dashboard</a></li>
         
             <li class="right"><a href="<?php echo URLROOT;?>/Hrmanagers/employees">Employees</a></li>
             
-                <li class="right"><a href="<?php echo URLROOT;?>/buyers/ongoingorders">Sessions</a></li>
+                <li class="right"><a href="<?php echo URLROOT;?>/Hrmanagers/sessions">Sessions</a></li>
             
             
                     
@@ -53,9 +55,7 @@
     <div class="order-content" style="width:100%">
       
       <div class="stock-details" style="margin-left:auto; margin-right:auto; margin-bottom:0px">
-          <div style="display:flex; justify-content:center">
-            <h2>ADD EMPLOYEE</h2>
-          </div>
+          
           <div class="details" style=" display:flex; justify-content:center">
           <form action="<?php echo URLROOT; ?>/Hrmanagers/addemployee" method="POST" name="createAccount" >
           
@@ -118,7 +118,7 @@
           </div>
 
           <div class="proceed-button" style=" display:flex; justify-content:center">
-          <input class="btn-proceed" type="submit" value="ADD EMPLOYEE">
+          <button class="btn-proceed" type="submit">ADD EMPLOYEE</button>
               
           </div>
           
