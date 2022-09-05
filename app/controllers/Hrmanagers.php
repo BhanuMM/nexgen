@@ -28,6 +28,18 @@ class Hrmanagers extends Controller {
         
         $this->view('hrmanagers/dashboard',$data);
     }
+    public function deleteSession()
+    {
+        if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+
+            $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
+            $this->hrModel->deleteSessionByID($_GET['SID']);
+
+            header('location:' . URLROOT . '/hrmanagers/sessions');
+        }
+    }
+
     public function addemployee(){
 
         $data = [
